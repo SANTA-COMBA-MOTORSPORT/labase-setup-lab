@@ -24,7 +24,7 @@
   color-scheme:dark;
   --bg:#0a0f1f; --bg2:#111933; --card:#151e3a; --card2:#1b2647; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
   --tx:#f5f5f7; --mut:#9b9bab; --dim:#6b6b7b;
-  --acc:#9db4ff; --acc2:#ffffff; --cy:#22d3ee; --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444; --gold:#facc15;
+  --acc:#9db4ff; --acc2:#ffffff; --cy:#dfe7ff; --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444; --gold:#facc15;
   --r:18px; --r2:12px; --sh:0 10px 30px rgba(0,0,0,.45);
   --disp:'Barlow Condensed',system-ui,sans-serif; --txt:'Inter',system-ui,-apple-system,sans-serif;
   --safe-b:env(safe-area-inset-bottom,0px);
@@ -56,12 +56,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .top .sub{font-size:11px;color:var(--mut);letter-spacing:.08em;text-transform:uppercase}
 .ib{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);flex:none;transition:transform .15s,background .2s;position:relative}
 .ib:active{transform:scale(.92)} .ib svg{width:20px;height:20px}
-.badge{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:9px;background:var(--cy);color:#00161b;font-size:11px;font-weight:800;display:grid;place-items:center;padding:0 5px;animation:pulse 1.6s infinite}
+.badge{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:9px;background:var(--cy);color:#0a0f1f;font-size:11px;font-weight:800;display:grid;place-items:center;padding:0 5px;animation:pulse 1.6s infinite}
 img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 .logo{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 200deg,var(--acc),var(--acc2),var(--acc));display:grid;place-items:center;font-family:var(--disp);font-weight:900;font-style:italic;color:#fff;box-shadow:0 0 22px rgba(157,180,255,.4)}
 
 .nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + var(--safe-b));z-index:40;display:flex;gap:4px;padding:6px;border-radius:22px;
-  background:rgba(22,22,29,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line2);box-shadow:var(--sh);width:min(440px,calc(100% - 24px))}
+  background:rgba(21,30,58,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line2);box-shadow:var(--sh);width:min(440px,calc(100% - 24px))}
 .nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;border-radius:16px;color:var(--mut);font-size:11px;font-weight:600;transition:all .25s}
 .nav button svg{width:22px;height:22px}
 .nav button.on{color:#fff;background:linear-gradient(135deg,rgba(157,180,255,.25),rgba(255,255,255,.22))}
@@ -76,7 +76,7 @@ img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 .btn:active{transform:scale(.97)}
 .btn.p{background:linear-gradient(135deg,var(--acc),#c7d4ff);color:#fff;box-shadow:0 8px 22px rgba(157,180,255,.35)}
 .btn.s{background:var(--card2);border:1px solid var(--line2)}
-.btn.g{color:var(--mut)} .btn.cy{background:linear-gradient(135deg,#0891b2,var(--cy));color:#00161b}
+.btn.g{color:var(--mut)} .btn.cy{background:linear-gradient(135deg,#5b7cfa,var(--cy));color:#0a0f1f}
 .btn.d{background:rgba(239,68,68,.14);color:#fca5a5;border:1px solid rgba(239,68,68,.3)}
 .btn.w{width:100%} .btn.sm{padding:9px 13px;font-size:13px;border-radius:11px}
 .btn svg{width:18px;height:18px}
@@ -98,11 +98,11 @@ img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 .carcard .nm{font-family:var(--disp);font-weight:800;font-size:28px;text-transform:uppercase;line-height:1}
 .carcard .meta{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
 .pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);font-size:12px;font-weight:600;white-space:nowrap}
-.pill.acc{background:rgba(157,180,255,.2);color:#ff8fb5}.pill.cy{background:rgba(34,211,238,.16);color:var(--cy)}.pill.ok{background:rgba(34,197,94,.16);color:#86efac}
+.pill.acc{background:rgba(157,180,255,.2);color:#c7d4ff}.pill.cy{background:rgba(223,231,255,.16);color:var(--cy)}.pill.ok{background:rgba(34,197,94,.16);color:#86efac}
 .pill.warn{background:rgba(245,158,11,.16);color:#fcd34d}.pill.bad{background:rgba(239,68,68,.16);color:#fca5a5}.pill.gold{background:rgba(250,204,21,.16);color:var(--gold)}
 .ph-fallback{background:
   radial-gradient(120% 90% at 80% 10%,rgba(255,255,255,.55),transparent 55%),
-  radial-gradient(90% 80% at 10% 90%,rgba(157,180,255,.45),transparent 60%),linear-gradient(135deg,#1a1a24,#0d0d12)}
+  radial-gradient(90% 80% at 10% 90%,rgba(157,180,255,.45),transparent 60%),linear-gradient(135deg,#1b2647,#0e142b)}
 
 .cover{position:relative;margin:0 -16px;height:220px;overflow:hidden}
 .cover .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,31,.2),rgba(10,15,31,.4) 50%,var(--bg) 100%)}
@@ -124,7 +124,7 @@ img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 .folder.base .in{position:relative;left:auto;right:auto;bottom:auto;padding:16px}
 .folder.add{display:grid;place-items:center;border:1.5px dashed var(--line2);background:transparent;color:var(--mut);aspect-ratio:auto;min-height:120px}
 .folder.empty{opacity:.55}
-.dot-new{position:absolute;right:10px;bottom:10px;width:10px;height:10px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 0 rgba(34,211,238,.7);animation:ping 1.6s infinite}
+.dot-new{position:absolute;right:10px;bottom:10px;width:10px;height:10px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 0 rgba(223,231,255,.7);animation:ping 1.6s infinite}
 
 /* setup cards */
 .scard{position:relative;display:block;width:100%;text-align:left;border-radius:18px;padding:14px 14px 14px 18px;background:var(--card);border:1px solid var(--line);overflow:hidden;transition:transform .15s}
@@ -135,10 +135,10 @@ img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 .scard .kp div{display:flex;flex-direction:column}
 .scard .kp b{font-family:var(--disp);font-size:20px;font-weight:800;line-height:1}
 .scard .kp span{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
-.scard.shared{background:linear-gradient(135deg,rgba(8,145,178,.28),rgba(34,211,238,.10) 50%,var(--card));border-color:rgba(34,211,238,.45);box-shadow:0 0 0 1px rgba(34,211,238,.1),0 10px 30px rgba(8,145,178,.15)}
-.scard.shared::before{background:linear-gradient(180deg,var(--cy),#0891b2)}
-.ribbon{position:absolute;right:-34px;top:14px;transform:rotate(35deg);background:var(--cy);color:#00161b;font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 40px}
-.new-tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:800;color:#00161b;background:var(--cy);border-radius:6px;padding:2px 7px;animation:pulse 1.4s infinite}
+.scard.shared{background:linear-gradient(135deg,rgba(8,145,178,.28),rgba(223,231,255,.10) 50%,var(--card));border-color:rgba(223,231,255,.45);box-shadow:0 0 0 1px rgba(223,231,255,.1),0 10px 30px rgba(8,145,178,.15)}
+.scard.shared::before{background:linear-gradient(180deg,var(--cy),#5b7cfa)}
+.ribbon{position:absolute;right:-34px;top:14px;transform:rotate(35deg);background:var(--cy);color:#0a0f1f;font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 40px}
+.new-tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:800;color:#0a0f1f;background:var(--cy);border-radius:6px;padding:2px 7px;animation:pulse 1.4s infinite}
 
 /* chips & tabs */
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:none;margin:0 -16px;padding-left:16px;padding-right:16px}
@@ -203,7 +203,7 @@ img.logo{background:#fff;object-fit:cover;border-radius:50%;padding:0}
 /* audit */
 .au{display:flex;gap:12px;padding:12px;border-radius:14px;background:var(--card);border:1px solid var(--line);margin-bottom:8px}
 .au .ic{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:14px}
-.au.crit .ic{background:rgba(239,68,68,.2);color:#fca5a5}.au.aviso .ic{background:rgba(245,158,11,.2);color:#fcd34d}.au.info .ic{background:rgba(34,211,238,.14);color:var(--cy)}
+.au.crit .ic{background:rgba(239,68,68,.2);color:#fca5a5}.au.aviso .ic{background:rgba(245,158,11,.2);color:#fcd34d}.au.info .ic{background:rgba(223,231,255,.14);color:var(--cy)}
 .au b{display:block;font-size:14px}.au p{margin:4px 0 0;font-size:13px;color:var(--mut)}.au .acc{margin-top:6px;font-size:12.5px;color:#fda4c4}
 
 /* engineer */
@@ -272,7 +272,7 @@ hr.s{border:0;border-top:1px solid var(--line);margin:16px 0}
 @keyframes up{from{transform:translateY(100%)}to{transform:none}}
 @keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.25);color:var(--acc)}100%{transform:scale(1)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(34,211,238,.7)}100%{box-shadow:0 0 0 12px rgba(34,211,238,0)}}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(223,231,255,.7)}100%{box-shadow:0 0 0 12px rgba(223,231,255,0)}}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,-20px)}10%,85%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-10px)}}
 @keyframes shake{0%,100%{transform:none}20%,60%{transform:translateX(-10px)}40%,80%{transform:translateX(10px)}}
 @keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
@@ -305,6 +305,12 @@ details.adv{margin-top:16px;border:1px solid var(--line);border-radius:16px;padd
   var APP = document.getElementById('app'), buf = '', busyOn = false;
   function store(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (x) {} }
   function load(k) { try { return localStorage.getItem(k); } catch (x) { return null; } }
+  // La sesión se guarda por duplicado (almacenamiento + cookie de este dominio): si el iPhone borra uno, queda el otro.
+  function ck(k) { var m = document.cookie.match(new RegExp('(?:^|; )' + k + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : null; }
+  function ckSet(k, v) { try { document.cookie = k + '=' + (v == null ? '; Max-Age=0' : encodeURIComponent(v) + '; Max-Age=' + 400 * 86400) + '; Path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : ''); } catch (x) {} }
+  function tokSave(t) { store('sl_token', t); ckSet('sl_token', t); }
+  function tokLoad() { var t = load('sl_token') || ck('sl_token'); if (t) { if (!load('sl_token')) store('sl_token', t); if (!ck('sl_token')) ckSet('sl_token', t); } return t; }
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (x) {}
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   window.apiFetch = function (req) {
     return fetch(window.SL_API, { method: 'POST', body: JSON.stringify(req), credentials: 'omit', redirect: 'follow' })
@@ -345,21 +351,29 @@ details.adv{margin-top:16px;border:1px solid var(--line);border-radius:16px;padd
     if (busyOn) return; var tel = (document.getElementById('ltel') || {}).value || '';
     if (buf.length < 4) { toast('El PIN tiene 4 a 6 cifras'); return; }
     busyOn = true; APP.querySelector('[data-a="login"]').textContent = '…';
-    api('login', { tel: tel, pin: buf }).then(function (r) { store('sl_token', r.token); store('sl_tel', tel); buf = ''; return fetchApp(r.token); })
+    api('login', { tel: tel, pin: buf }).then(function (r) { tokSave(r.token); store('sl_tel', tel); buf = ''; if (r.boot) { try { sessionStorage.setItem('sl_boot0', JSON.stringify(r.boot)); } catch (x) {} } return fetchApp(r.token); })
       .catch(function (err) {
         busyOn = false; buf = ''; var lb = APP.querySelector('[data-a="login"]');
         if (!lb) { loginView(); var t = document.getElementById('ltel'); if (t) t.value = tel; }   // la pantalla se perdió: se rehace con el móvil escrito
         else { lb.textContent = 'Entrar'; paint(); }
         var p = APP.querySelector('.pin'); if (p) { p.classList.remove('shake'); void p.offsetWidth; p.classList.add('shake'); } toast(err.message); });
   }
-  /** Pide la app al servidor (solo con sesión válida). Se guarda en este móvil por versión: la siguiente vez arranca al momento. */
+  /** Arranca al instante con la copia local de la app y comprueba la versión en segundo plano; sin copia, la pide al servidor. */
   function fetchApp(token) {
     var v = load('sl_bv'), cached = v ? load('sl_bundle') : null;
-    return api('bundle', { v: cached ? v : '' }, token).then(function (r) {
-      var html = r.same && cached ? cached : r.html;
-      if (!html) throw new Error('No se pudo cargar la app');
-      if (!r.same) { store('sl_bundle', null); store('sl_bv', null); try { localStorage.setItem('sl_bundle', html); localStorage.setItem('sl_bv', r.v); } catch (x) { store('sl_bundle', null); store('sl_bv', null); } }
-      inject(html);
+    if (cached) {
+      inject(cached);
+      api('bundle', { v: v }, token).then(function (r) {
+        if (r.same || !r.html) return;
+        try { localStorage.setItem('sl_bundle', r.html); localStorage.setItem('sl_bv', r.v); } catch (x) { store('sl_bundle', null); store('sl_bv', null); }
+        if (window.__SL_NEWVER) window.__SL_NEWVER(); else { var t = document.createElement('div'); t.className = 'toast'; t.textContent = 'Hay una versión nueva: se aplicará al volver a abrir'; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 3500); }
+      }).catch(function (err) { if (err && err.code === 'SESION') { tokSave(null); location.reload(); } });
+      return Promise.resolve();
+    }
+    return api('bundle', { v: '' }, token).then(function (r) {
+      if (!r.html) throw new Error('No se pudo cargar la app');
+      try { localStorage.setItem('sl_bundle', r.html); localStorage.setItem('sl_bv', r.v); } catch (x) { store('sl_bundle', null); store('sl_bv', null); }
+      inject(r.html);
     });
   }
   function inject(html) {
@@ -375,10 +389,10 @@ details.adv{margin-top:16px;border:1px solid var(--line);border-radius:16px;padd
     if (window.__SL_BOOT) window.__SL_BOOT();
   }
   document.addEventListener('click', onClick); document.addEventListener('keydown', onKey);
-  var tk = load('sl_token');
+  var tk = tokLoad();
   if (!tk) loginView();
   else fetchApp(tk).catch(function (err) {
-    if (err.code === 'SESION') { store('sl_token', null); loginView(); return; }
+    if (err.code === 'SESION') { tokSave(null); loginView(); return; }
     APP.innerHTML = '<div class="center" style="padding-top:120px"><div style="font-size:40px">📡</div><h3>No se pudo conectar</h3><p class="small mut">' + esc(err.message) + '</p><button class="btn p" onclick="location.reload()">Reintentar</button></div>';
   });
 })();
